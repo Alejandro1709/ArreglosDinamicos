@@ -24,17 +24,22 @@ int main() {
   *n = 0;
   int *arr = NULL;
   int elemento;
+  int *op;
 
   while (1) {
-    cout << "AGREGAR ELEMENTOS A UN ARREGLO" << endl;
-    cout << "-----------------------------" << endl;
-    cout << "Ingrese Elemento: ";
-    cin >> elemento;
-    arr = agregar_elemento(arr, n, elemento);
-    cout << "\nElementos del arreglo: " << endl;
-    mostrar_arreglo(arr, n);
-    cout << "\nPresione una tecla para continuar..." << endl;
-    return 0;
+   cout << "MENU" << endl;
+   cout << "1. Listar Elementos" << endl;
+   cout << "2. Agregar al final" << endl;
+   cout << "3. Eliminar en posicion" << endl;
+   cout << "4. Agregar al inicio" << endl;
+   cout << "5. Modificar en posicion" << endl;
+   cout << "6. Insertar en posicion" << endl;
+   cout << "7. Ordenar de mayor a menor" << endl;
+   cout << "8. Salir" << endl;
+   cin >> *op;
+
+   if (*op == 8) break;
   }
+
   return 0;
 } 
